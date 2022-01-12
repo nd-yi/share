@@ -8,8 +8,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
@@ -20,7 +20,7 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
@@ -77,6 +77,52 @@ button {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+}
+
+.d-flex-around {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.mt-10 {
+  margin-top: 10px;
+}
+
+.mt-20 {
+  margin-top: 20px;
+}
+
+.ml-10 {
+  margin-left: 10px;
+}
+.ml-4 {
+  margin-left: 4px;
+}
+
+.h2 {
+  font-size: 16px;
+  font-weight: bold;
+  color: #222;
+}
+.relative {
+  position: relative;
+}
+
+.base-text {
+  color: #999;
+  font-size: 14px;
+  font-weight: 400;
+}
+.title {
+  font-size: 16px;
+  font-weight: bold;
+  color: #222;
+}
+.sub-title {
+  font-size: 14;
+  font-weight: 400;
+  color: #222;
 }
 
 .App {
@@ -305,4 +351,62 @@ button {
   font-size: .875rem;
   color: #fff;
   padding-left: .625rem;
+}
+
+.user-profile {
+  background: #8CD1E6;
+  padding: 1rem .625rem 1.875rem .625rem;
+  color: #222;
+}
+
+.user-profile .text {
+  color: #fff;
+}
+
+.user-profile-title {
+  font-size: 14px;
+  font-weight: bold;
+  padding-left: 20px;
+}
+.user-profile-content {
+  margin-top: 16px;
+  padding-left: 20px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.user-profile-detail {
+  margin-top: 30px;
+}
+.user-profile-select {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  /* transform: translate(-50%); */
+}
+
+
+/* 店铺分享 */
+.store-header {
+  width: 100%;
+  padding: 20px;
+  background: #fff;
+}
+
+.store-header-img {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.store-header img {
+  border-radius: 10px;
+  display: inline-block;
+}
+.store-header-content {
+  margin: 20px 0;
+}
+.store-desc {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
