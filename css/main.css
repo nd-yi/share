@@ -85,6 +85,7 @@ button {
   font-size: 1rem;
   color: #222;
   background:rgba(0,0,0,.04);
+  font-family: Helvetica, Tahoma, Arial, "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
 }
 
  /* header */

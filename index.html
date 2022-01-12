@@ -12,8 +12,8 @@
   <meta property="og:url" content="">
   <meta property="og:image" content="">
 
-  <link rel="manifest" href="site.webmanifest">
-  <link rel="apple-touch-icon" href="icon.png">
+  <!-- <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png"> -->
   <!-- Place favicon.ico in the root directory -->
 
   <!-- <link rel="stylesheet" href="css/normalize.css"> -->
@@ -68,6 +68,7 @@
 
       <section class="comment">
         <span class="comment-title d-flex-center">评论（1325）</span>
+
         <ul class="comment-list">
           <li class="comment-item-wrapper">
             <div class="comment-item">
@@ -190,6 +191,8 @@
               <img src="./img/papillon_small_purple.png" width="20px" height="20px" alt="papillonSmallPurple" />
             </div>
           </li>
+
+
           <li class="recommended-content-item" onClick="handleClick()" key={`${userName}-${index}`}>
             <div><img src="./img/related_forth.png" width="100%" alt="relatedTwo" /></div>
             <h2 class="recommended-content-item-title">人家都不跟你玩，你说你追着人家干嘛...</h2>
@@ -208,6 +211,7 @@
               <img src="./img/papillon_small_blue.png" width="20px" height="20px" alt="papillonSmallPurple" />
             </div>
           </li>
+
         </ul>
         <div class="d-flex-center">
           <button class="button recommended-content-button" onClick="handleClick()">
@@ -232,13 +236,6 @@
       window.open(targetUrl)
     }
   </script>
-
-  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-  <script>
-    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
-  </script>
-  <script src="https://www.google-analytics.com/analytics.js" async></script>
 </body>
 
 </html>
