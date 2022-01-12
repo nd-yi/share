@@ -1,0 +1,122 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+  <link rel="stylesheet" href="css/main.css">
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+  <div id="root">
+    <div class="App">
+      <header class="header">
+        <div class="d-flex-start" onclick="handleClick()">
+          <img src='./img/logo.png' width="32px" height="32px" alt="headPortrait1" />
+          <div class="header-content">
+            <p class="header-content-title">Pet App</p>
+            <p class="header-content-desc">标记我的宠物生活</p>
+          </div>
+        </div>
+        <button class="button header-button outline" onclick="handleClick()">打开App</button>
+      </header>
+
+      <!-- 店铺分享 -->
+      <section class="store-header">
+        <div>
+          <img src="./img/store/store_header.png" width="100%" height="100%" alt="store" />
+        </div>
+        <div class="d-flex-center">
+          <button class="button outline content-button big-button" onClick="handleClick()">打开App看更多精彩评论</button>
+        </div>
+        <div class="store-header-content">
+          <h2 class="store-title">ZORO HOME</h2>
+          <div class="store-desc" >
+            <div>
+              <div class="d-flex-start mt-10 footprint">
+                <img src="./img/store/footprint.png" width="12px" height="12px" alt="footprint" />
+                <img src="./img/store/footprint.png" width="12px" height="12px" alt="footprint" />
+                <img src="./img/store/footprint.png" width="12px" height="12px" alt="footprint" />
+                <img src="./img/store/footprint.png" width="12px" height="12px" alt="footprint" />
+                <span class="footprint-text">4.9</span>
+                <span class="store-text">人均￥315</span>
+              </div>
+              <p class="store-text mt-10">
+                宠物美容店
+                新天地/马当路
+                <img src="./img/store/arrow.png" width="5px" height="10px" alt="arrow" />
+              </p>
+            </div>
+            <div class="d-flex-between">
+              <img src="./img/store/store.png" width="32px" height="32px" alt="store" />
+              <img src="./img/store/arrow.png" width="5px" height="10px" alt="arrow" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="store-content">
+        <div class="d-flex-between">
+          <div>
+            <h3 class="store-sub-title">营业中 周一至周日 10:00-22:00</h3>
+            <div class="d-flex-start mt-6">
+              <button class="store-button store-text">当日対応OK</button>
+              <button class="store-button store-text">女性トリマーの在籍</button>
+              <button class="store-button store-text">ペット写真撮影あり</button>
+            </div>
+          </div>
+          <div>
+            <img src="./img/store/arrow.png" width="5px" height="10px" alt="arrow" />
+          </div>
+        </div>
+
+        <div class="divide"></div>
+
+        <div class="store-info">
+          <div class="d-flex-start">
+            <img src="./img/store/location.png" width="24px" height="24px" alt="location" />
+            <div class="ml-4">
+              <h3>〒 111-0056 東京都 台東区 小島2-18-4</h3>
+              <p class="store-text mt-6 ellipsis">都営大江戸線/ つくばエキスプレス新御徒町...</p>
+            </div>
+          </div>
+          <div class="d-flex-start mt-10">
+            <img src="./img/store/tel.png" width="24px" height="24px" alt="tel" />
+            <h3 class="store-sub-title ml-4">03-1234-5678</h3>
+          </div>
+          <div class="d-flex-start mt-10">
+            <img src="./img/store/address.png" width="24px" height="24px" alt="address" />
+            <h3 class="store-sub-title ml-4">www.nga-x.com</h3>
+          </div>
+          
+        </div>
+        <div>
+          <img src="./img/store/group.png" width="100%" alt="group" />
+        </div>
+        
+      </section>
+
+      <footer class="footer d-flex-center">
+        <button class="button recommended-content-button" onClick="handleClick()">
+         <img src="./img/logo.png" width="32px" height="32px" alt="button icon" />
+         <span class="recommended-content-button-text" >App内打开</span>
+        </button>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    function handleClick() {
+      const targetUrl = 'https://apps.apple.com/us/app/pet/id1560912975';
+      window.open(targetUrl)
+    }
+  </script>
+</body>
+
+</html>

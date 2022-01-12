@@ -8,6 +8,8 @@
   "scripts": {
     "build": "parcel build index.html",
     "dev": "parcel index.html --open",
+    "dev:store": "parcel store.html --open",
+    "dev:user": "parcel userProfile.html --open",
     "start": "npm run build && npm run dev",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
