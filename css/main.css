@@ -118,9 +118,9 @@ button {
   position: relative;
 }
 .ellipsis {
-  overflow:hidden;
-  text-overflow:ellipsis;
-  white-space:nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .base-text {
   color: #999;
@@ -380,6 +380,10 @@ button {
   color: #222;
 }
 
+.user-profile-desc {
+  overflow: hidden;
+}
+
 .user-profile .text {
   color: #fff;
   font-size: 12px;
@@ -478,6 +482,12 @@ button {
   color: #222;
   line-height: 1.4;
 }
+.store-labels {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+}
 
 .store-content {
   margin-top: 6px;
@@ -498,8 +508,11 @@ button {
   border-radius: 5px;
   background: transparent;
 }
-.store-button:not(:first-child) {
+/* .store-button:not(:first-child) {
   margin-left: 4px;
+} */
+.store-button {
+ margin: 2px;
 }
 .divide {
   width: 100%;
@@ -509,4 +522,7 @@ button {
 }
 .store-info {
   padding: 10px 0;
+}
+.store-info-first {
+  overflow: hidden;;
 }
