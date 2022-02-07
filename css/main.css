@@ -318,6 +318,22 @@ button {
   grid-column-gap: 2rem;
   margin-top: .625rem;
 }
+.recommended-content-user-list {
+  columns: 2;
+  column-gap: 10px;
+  margin-top: .625rem;
+}
+.recommended-content-user-item {
+  position: relative;
+  border-radius: 1.25rem;
+  overflow: hidden;
+  padding-bottom: .6875rem;
+  box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  break-inside: avoid;
+  margin-bottom: 10px;
+}
+
 .recommended-content-item {
     position: relative;
     border-radius: 1.25rem;
@@ -378,6 +394,11 @@ button {
   background: #8CD1E6;
   padding: 1rem .625rem 1.875rem .625rem;
   color: #222;
+}
+
+.user-profile-image,
+.user-profile-pet-image {
+  border-radius: 50%;
 }
 
 .user-profile-desc {

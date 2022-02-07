@@ -29,7 +29,7 @@
 
       <section class="user-profile">
         <div class="d-flex-start">
-          <img src="./img/profile.png" width="80px" height="80px" alt="profile" />
+          <img src="./img/profile.png" class="user-profile-image" width="80px" height="80px" alt="profile" />
           <div class="ml-6 user-profile-desc">
             <h2 class="user-profile-title">哔哩吧啦哔哩吧啦</h2>
             <p class="user-profile-content">一个平平无奇的铲dddddddddddddd屎官罢了，真的一个平平无奇的铲屎官罢了，一个平平无奇的铲屎官罢了一个平平无奇的铲屎官罢了一个平平无奇的铲屎官罢了一个平平无奇的铲屎官...</p>
@@ -37,7 +37,7 @@
         </div>
         <div class="user-profile-pets mt-20">
           <div class="d-flex-start">
-            <img src="./img/papillon_large.png" height="48px" width="48px" alt="papillon_large" />
+            <img src="./img/papillon_large.png" class="user-profile-pet-image" height="48px" width="48px" alt="papillon_large" />
             <div class="">
               <h2 class="user-profile-title ml-6">Wuki</h2>
               <div class="mt-6 d-flex-start">
@@ -48,7 +48,7 @@
           </div>
           <div class="d-flex-start">
             <div class="relative">
-              <img src="./img/papillon_large.png" height="48px" width="48px" alt="papillon_large" />
+              <img src="./img/papillon_large.png" class="user-profile-pet-image" height="48px" width="48px" alt="papillon_large" />
               <img class="user-profile-select" src="./img/select.png" width="16px" height="16px" alt="select" />
             </div>
             <div>
@@ -63,7 +63,7 @@
           </div>
 
           <div class="d-flex-start">
-            <img src="./img/papillon_large.png" height="48px" width="48px" alt="papillon_large" />
+            <img src="./img/papillon_large.png" class="user-profile-pet-image" height="48px" width="48px" alt="papillon_large" />
             <div>
               <h2 class="user-profile-title ml-6">Wuki</h2>
               <div class="mt-6 d-flex-start">
@@ -83,8 +83,8 @@
           <span class="title post"></span>
           <span class="thin-title">领养</span>
         </div>
-        <ul class="recommended-content-list">
-          <li class="recommended-content-item" onClick="handleClick()">
+        <ul class="recommended-content-user-list">
+          <li class="recommended-content-user-item" onClick="handleClick()">
             <div><img src="./img/related-img-one.png" width="100%" alt="relatedTwo" /></div>
             <h2 class="recommended-content-item-title">人家都不跟你玩，你说你追着人家干嘛...</h2>
             <div class="recommended-content-item-user">
@@ -106,7 +106,7 @@
               <img src="./img/number_two.png" width="20px" height="20px" alt="papillonSmallPurple" />
             </div>
           </li>
-          <li class="recommended-content-item" onClick="handleClick()">
+          <li class="recommended-content-user-item" onClick="handleClick()">
             <div><img src="./img/related_two.png" width="100%" alt="relatedTwo" /></div>
             <h2 class="recommended-content-item-title">人家都不跟你玩，你说你追着人家干嘛...</h2>
             <div class="recommended-content-item-user">
@@ -124,7 +124,7 @@
               <img src="./img/papillon_small_purple.png" width="20px" height="20px" alt="papillonSmallPurple"} />
             </div>
           </li>
-          <li class="recommended-content-item" onClick="handleClick()">
+          <li class="recommended-content-user-item" onClick="handleClick()">
             <div><img src="./img/related_img_three.png" width="100%" alt="relatedTwo" /></div>
             <h2 class="recommended-content-item-title">人家都不跟你玩，你说你追着人家干嘛...</h2>
             <div class="recommended-content-item-user">
@@ -144,7 +144,7 @@
           </li>
 
 
-          <li class="recommended-content-item" onClick="handleClick()" key={`${userName}-${index}`}>
+          <li class="recommended-content-user-item" onClick="handleClick()" key={`${userName}-${index}`}>
             <div><img src="./img/related_forth.png" width="100%" alt="relatedTwo" /></div>
             <h2 class="recommended-content-item-title">人家都不跟你玩，你说你追着人家干嘛...</h2>
             <div class="recommended-content-item-user">
