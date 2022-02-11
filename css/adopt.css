@@ -1,0 +1,105 @@
+.adopt-main {
+  background: #fff;
+}
+.adopt-content {
+  padding: .937rem;
+}
+
+.adopt-title {
+  font-weight: 400;
+  font-size: 12px;
+  text-align: left;
+  color: #222;
+  margin-left: 5px;
+}
+.adopt-content-article {
+  margin-top: 1.56rem;
+}
+.adopt-content-article-title {
+  font-weight: bold;
+  font-size: 16px;
+  text-align: left;
+  color: #222;
+}
+.adopt-content-article-body {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.3;
+  letter-spacing: .03em;
+  color: #222
+}
+.adopt-content-article-body > p {
+  margin-top: 10px;
+}
+.adopt-button {
+  border-radius: 20px;
+}
+.adopt-button-text {
+  margin-left: 2px;
+  font-weight: 400;
+  font-size: 12px;
+  color: #999;
+}
+.adopt-release-time {
+  font-weight: 400;
+  font-size: 12px;
+  text-align: left;
+  color: #999;
+  margin-top: 10px;
+}
+
+.adopt-labels {
+  padding: 15px 3px;
+  background: #fff;
+  margin-top: 5px;
+}
+.adopt-labels-box {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  /* align-content: flex-start; */
+  align-content: space-between;
+}
+.adopt-labels-box-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* margin-right: 25px; */
+  margin-top: 15px;
+  padding: 0 10px;
+}
+
+/* .adopt-labels-box-item:not(:last-child) {
+  margin-right: 25px;
+} */
+.adopt-labels-box-item-text {
+  font-weight: 400;
+  font-size: 14px;
+  text-align: left;
+  color: #222;
+  margin-left: 5px;
+}
+
+.adopt-raise {
+  background: #fff;
+  margin-top: 5px;
+  padding: 15px;
+}
+.raise-title {
+  font-weight: bold;
+  font-size: 14px;
+  color: #222;
+}
+.raise-content {
+  font-weight: 400;
+  font-size: 12px;
+  color: #222;
+  margin-top: 15px;
+  line-height: 1.4;
+  overflow : hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}

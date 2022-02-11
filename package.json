@@ -1,8 +1,8 @@
 {
-  "name": " ",
+  "name": "share",
   "version": "0.0.1",
-  "description": "",
-  "keywords": "",
+  "description": "javascript",
+  "keywords": "nice",
   "license": "",
   "author": "",
   "scripts": {
@@ -10,6 +10,7 @@
     "dev": "parcel index.html --open",
     "dev:store": "parcel store.html --open",
     "dev:user": "parcel userProfile.html --open",
+    "dev:adopt": "parcel adopt.html --open",
     "start": "npm run build && npm run dev",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
