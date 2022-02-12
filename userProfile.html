@@ -37,13 +37,6 @@
           </div>
         </div>
 
-        <!-- <div class="my-slider">
-          <div></div>
-          <div></div>
-          <div></div>
-        </div> -->
-
-
         <div class="user-profile-pets slider-container mt-20">
           <div>
             <div class="d-flex-start">
@@ -57,7 +50,7 @@
               </div>
             </div>
           </div>
-          
+
           <div>
             <div class="d-flex-start">
               <div class="relative">
@@ -88,7 +81,7 @@
               </div>
             </div>
           </div>
-          
+
           <div>
             <div class="d-flex-start">
               <img src="./img/papillon_large.png" class="user-profile-pet-image" height="48px" width="48px" alt="papillon_large" />
@@ -146,11 +139,9 @@
                 <img src="./img/papillon_small_blue.png" width="20px" height="20px" alt="papillonSmallPurple" />
                 <img src="./img/papillon_small_purple.png" width="20px" height="20px" alt="papillonSmallPurple" />
                 <img src="./img/papillon_small_blue.png" width="20px" height="20px" alt="papillonSmallPurple" />
-                <!-- <img src="./img/number_two.png" width="20px" height="20px" alt="papillonSmallPurple" /> -->
+                <!-- 显示图片的数量用下面这个 -->
                 <span class="number">+5</span>
               </div>
-              
-              
             </div>
           </li>
           <li class="recommended-content-user-item" onClick="handleClick()">
@@ -168,7 +159,7 @@
               </div>
             </div>
             <div class="recommended-content-item-icons">
-              <img src="./img/papillon_small_purple.png" width="20px" height="20px" alt="papillonSmallPurple"} />
+              <img src="./img/papillon_small_purple.png" width="20px" height="20px" alt="papillonSmallPurple" />
             </div>
           </li>
           <li class="recommended-content-user-item" onClick="handleClick()">
@@ -190,8 +181,7 @@
             </div>
           </li>
 
-
-          <li class="recommended-content-user-item" onClick="handleClick()" key={`${userName}-${index}`}>
+          <li class="recommended-content-user-item" onClick="handleClick()">
             <div><img src="./img/related_forth.png" width="100%" alt="relatedTwo" /></div>
             <h2 class="recommended-content-item-title">人家都不跟你玩，你说你追着人家干嘛...</h2>
             <div class="recommended-content-item-user">
@@ -209,21 +199,19 @@
               <img src="./img/papillon_small_blue.png" width="20px" height="20px" alt="papillonSmallPurple" />
             </div>
           </li>
-
         </ul>
       </section>
 
-      <footer class="footer d-flex-center">
-        <button class="button recommended-content-button" onClick="handleClick()">
-         <img src="./img/logo.png" width="32px" height="32px" alt="button icon" />
-         <span class="recommended-content-button-text" >App内打开</span>
+      <div class="footer d-flex-center">
+        <button class="button recommended-content-button" onclick="handleClick()">
+          <img src="./img/logo.png" width="32px" height="32px" alt="button icon" />
+          <span class="recommended-content-button-text" >App内打开</span>
         </button>
       </div>
-    </footer>
-
 
     </div>
   </div>
+
   <script>
     function handleClick() {
       const targetUrl = 'https://apps.apple.com/us/app/pet/id1560912975';
@@ -243,8 +231,7 @@
       controls: false,
       navPosition: 'bottom',
     });
-    </script>
-  
-</body>
+  </script>
 
+</body>
 </html>
