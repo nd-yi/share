@@ -1,0 +1,39 @@
+
+.App {
+  max-width: 750px;
+  margin: 0 auto;
+  font-size: 1rem;
+  color: #222;
+  background:rgba(0,0,0,.04);
+  font-family: Helvetica, Tahoma, Arial, "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+}
+
+.cards {
+  height: 100vh;
+  overflow: auto;
+  background: url('../img/cards/background2.png') no-repeat local;
+  background-size: 100% 100%;
+}
+
+.footer {
+  background: transparent;
+  margin-top: 30px;
+}
+
+.cards-images {
+  margin-top: 60px;
+  padding: 0 14px;
+  background: transparent;
+}
+
+.cards-images-item {
+  border-radius: 20px;
+  padding: 8px;
+  background: #fff;
+}
+.cards-images-item:not(:first-child) {
+  margin-top: 10px;
+}
+.cards-images-item img {
+  border-radius: 20px;
+}
