@@ -1,0 +1,290 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+  <!-- <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/cards.css"> -->
+  <style>
+    /* reset css */
+    html, body, div, span, applet, object, iframe,
+    h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+    a, abbr, acronym, address, big, cite, code,
+    del, dfn, em, img, ins, kbd, q, s, samp,
+    small, strike, strong, sub, sup, tt, var,
+    b, u, i, center,
+    dl, dt, dd, ol, ul, li,
+    fieldset, form, label, legend,
+    table, caption, tbody, tfoot, thead, tr, th, td,
+    article, aside, canvas, details, embed,
+    figure, figcaption, footer, header, hgroup,
+    menu, nav, output, ruby, section, summary,
+    time, mark, audio, video {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      font-size: 100%;
+      font: inherit;
+      vertical-align: baseline;
+    }
+    /* HTML5 display-role reset for older browsers */
+    article, aside, details, figcaption, figure,
+    footer, header, hgroup, menu, nav, section {
+      display: block;
+    }
+    body {
+      line-height: 1;
+    }
+    ol, ul {
+      list-style: none;
+    }
+    blockquote, q {
+      quotes: none;
+    }
+    blockquote:before, blockquote:after,
+    q:before, q:after {
+      content: '';
+      content: none;
+    }
+    table {
+      border-collapse: collapse;
+      border-spacing: 0;
+    }
+
+
+    /* common css */
+    button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      outline: none;
+      padding: .875rem 1rem;
+      border-radius: 1.5rem;
+      border: none;
+      background: #FF69AD;
+      font-size: 0.875rem;
+      pointer-events: auto;
+    }
+
+    .outline {
+      color: #FF69AD;
+      border: 1px solid #FF69AD;
+      border-radius: 1rem;
+      padding: .5rem 1rem;
+      background: transparent;
+    }
+    .big-button {
+      width: 20rem;
+    }
+    .d-flex-center {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .d-flex-start {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+    }
+
+    .d-flex-around {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+    .d-flex-between {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .mt-6 {
+      margin-top: 6px;
+    }
+    .mt-10 {
+      margin-top: 10px;
+    }
+
+    .mt-20 {
+      margin-top: 20px;
+    }
+
+    .ml-10 {
+      margin-left: 10px;
+    }
+    .ml-4 {
+      margin-left: 4px;
+    }
+    .mb-30 {
+      margin-bottom: 30px;
+    }
+
+    .ml-6 {
+      margin-left: 6px;
+    }
+    .relative {
+      position: relative;
+    }
+    .ellipsis {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    .base-text {
+      color: #999;
+      font-size: 14px;
+      font-weight: 400;
+    }
+    .title {
+      font-size: 16px;
+      font-weight: bold;
+      color: #222;
+    }
+    .thin-title {
+      font-size: 16px;
+      font-weight: 400;
+      color: #222;
+      margin-left: 20px;
+    }
+    .sub-title {
+      font-size: 14;
+      font-weight: 400;
+      color: #222;
+    }
+
+    .footer {
+      padding-bottom: 30px;
+      background: #fff;
+    }
+
+    .footer-content-button {
+      width: 10rem;
+      height: 3rem;
+      border-radius: 1.5rem;
+      background: #8cd1e6;
+    }
+
+    .footer-content-button-text {
+      font-size: .875rem;
+      color: #fff;
+      padding-left: .625rem;
+    }
+
+    .App {
+      max-width: 750px;
+      margin: 0 auto;
+      font-size: 1rem;
+      color: #222;
+      background:rgba(0,0,0,.04);
+      font-family: Helvetica, Tahoma, Arial, "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+    }
+
+    /* header */
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 8px 15px;
+      background: #fff;
+    }
+    .header-content {
+      margin-left: .625rem;
+    }
+    .header-content-title {
+      font-weight: bold;
+      font-size: .75rem;
+      color: #222;
+      padding: .1em 0;
+    }
+    .header-content-desc {
+      font-size: .625rem;
+      padding: .5em 0;
+      color: #999;
+    }
+    .header-button {
+      height: 2rem;
+      font-size: 0.875rem;
+    }
+
+    .cards {
+      height: 100vh;
+      overflow: auto;
+      background: url('./img/cards/background2.png') no-repeat local;
+      background-size: 100% 100%;
+    }
+
+    .footer {
+      background: transparent;
+      margin-top: 30px;
+    }
+
+    .cards-images {
+      margin-top: 50px;
+      padding: 0 14px;
+      background: transparent;
+    }
+
+    .cards-images-item {
+      border-radius: 20px;
+      padding: 8px;
+      background: #fff;
+    }
+    .cards-images-item:not(:first-child) {
+      margin-top: 10px;
+    }
+    .cards-images-item img {
+      border-radius: 20px;
+    }
+
+  </style>
+  
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+  <div id="root">
+    <div class="App cards">
+      <header class="header">
+        <div class="d-flex-start" onclick="handleClick()">
+          <img src='./img/logo.png' width="32px" height="32px" alt="headPortrait1" />
+          <div class="header-content">
+            <p class="header-content-title">Pet App</p>
+            <p class="header-content-desc">标记我的宠物生活</p>
+          </div>
+        </div>
+        <button class="button header-button outline" onclick="handleClick()">打开App</button>
+      </header>
+
+      <div class="cards-images">
+        <div class="post-header-images">
+          <div class="cards-images-item"><img src="./img/photo.png" width="100%" alt="photo3" /></div>
+          <div class="cards-images-item"><img src="./img/photo.png" width="100%" alt="photo3" /></div>
+        </div>
+      </div>
+
+      <footer class="footer d-flex-center">
+          <button class="button footer-content-button" onClick="handleClick()">
+          <img src="./img/logo.png" width="32px" height="32px" alt="button icon" />
+          <span class="footer-content-button-text" >App内打开</span>
+          </button>
+        </div>
+      </footer>
+
+    </div>
+  </div>
+  <script>
+    function handleClick() {
+      const targetUrl = 'https://apps.apple.com/us/app/pet/id1560912975';
+      window.open(targetUrl)
+    }
+  </script>
+</body>
+
+</html>

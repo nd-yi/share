@@ -150,6 +150,19 @@ button {
   background: #fff;
 }
 
+.footer-content-button {
+  width: 10rem;
+  height: 3rem;
+  border-radius: 1.5rem;
+  background: #8cd1e6;
+}
+
+.footer-content-button-text {
+  font-size: .875rem;
+  color: #fff;
+  padding-left: .625rem;
+}
+
 .App {
   max-width: 750px;
   margin: 0 auto;
