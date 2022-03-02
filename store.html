@@ -9,8 +9,9 @@
   <meta property="og:type" content="">
   <meta property="og:url" content="">
   <meta property="og:image" content="">
-  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/store.css">
   <meta name="theme-color" content="#fafafa">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
 </head>
 
 <body>
@@ -29,8 +30,10 @@
 
       <!-- 店铺分享 -->
       <section class="store-header">
-        <div>
-          <img src="./img/store/store_header.png" width="100%" height="100%" alt="store" />
+        <div class="store-header-images">
+           <img src="./img/store/store_header.png" width="100%" height="100%" alt="store" />
+           <img src="./img/store/store_header.png" width="100%" height="100%" alt="store" />
+           <img src="./img/store/store_header.png" width="100%" height="100%" alt="store" />
         </div>
         <div class="d-flex-center">
           <button class="button outline content-button big-button" onClick="handleClick()">打开App看更多精彩评论</button>
@@ -120,6 +123,20 @@
       const targetUrl = 'https://apps.apple.com/us/app/pet/id1560912975';
       window.open(targetUrl)
     }
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+  <script>
+    var slider = tns({
+      container: '.store-header-images',
+      items: 1,
+      slideBy: 'page',
+      speed: 400,
+      mouseDrag: true,
+      autoplay: false,
+      preventScrollOnTouch: 'auto',
+      controls: false,
+      navPosition: 'bottom',
+    });
   </script>
 </body>
 
