@@ -12,6 +12,8 @@
     "dev:user": "parcel userProfile.html --open",
     "dev:adopt": "parcel adopt.html --open",
     "dev:card": "parcel shareCards.html --open",
+    "dev:card-one": "parcel card-one.html --open",
+    "dev:card-two": "parcel card-two.html --open",
     "start": "npm run build && npm run dev",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
