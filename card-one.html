@@ -162,8 +162,19 @@ button {
   margin-top: 20px;
 }
 .card-one-image {
-  /* border-radius: 50% / 100% 100% 100% / 50%; */
-  /* border-radius: 86% / 100% 100% 0 0; */
+  /* height: 96px; */
+  border-radius: 50% / 50% ;
+  border: 1px solid #aaa;
+}
+.card-one-image-wrapper {
+  height: 100%;
+  display: inline-block;
+  padding: 1px;
+  background: #fff;
+  border: 2px solid #999;
+  overflow: hidden;
+  border-radius: 50% / 50% ;
+
 }
 .card-ID {
   position: relative;
@@ -284,7 +295,11 @@ button {
           <div class="qrcode-wrapper">
             <div id="qrcode"></div>
           </div>
-          <img class="card-one-image" src="./img/cards/profile.png" height="100%" />
+          <!-- <img class="card-one-image" src="./img/cards/profile.png" height="100%" /> -->
+          <div class="card-one-image-wrapper">
+            <img class="card-one-image" src="https://tva1.sinaimg.cn/large/008i3skNgy1gqs8veg8q6j304c04m744.jpg" height="96px" />
+          </div>
+          
 
           <div class="card-ID">
             <img src="./img/cards/IDcode.png" width="100%" />
