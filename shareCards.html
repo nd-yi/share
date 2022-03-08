@@ -9,14 +9,203 @@
   <meta property="og:type" content="">
   <meta property="og:url" content="">
   <meta property="og:image" content="">
-  <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/cards.css">
   <meta name="theme-color" content="#fafafa">
+  <style>
+  * reset css */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+ /* common css */
+button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  outline: none;
+  padding: .875rem 1rem;
+  border-radius: 1.5rem;
+  border: none;
+  background: #FF69AD;
+  font-size: 0.875rem;
+  pointer-events: auto;
+}
+
+.outline {
+  color: #FF69AD;
+  border: 1px solid #FF69AD;
+  border-radius: 1rem;
+  padding: .5rem 1rem;
+  background: transparent;
+}
+.big-button {
+  width: 20rem;
+}
+.d-flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.d-flex-start {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.d-flex-around {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.d-flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  width: 100%;
+  max-width: 750px;
+  margin: 0 auto;
+  font-size: 1rem;
+  color: #222;
+  background:rgba(0,0,0,.04);
+  font-family: Helvetica, Tahoma, Arial, "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+}
+
+.cards {
+  height: 100vh;
+  overflow: auto;
+  background: url('./img/cards/background2.png') no-repeat local;
+  background-size: 100% 100%;
+  box-sizing: content-box;
+}
+
+.footer {
+  padding-bottom: 30px;
+  background: transparent;
+  margin-top: 30px;
+}
+
+.footer-content-button {
+  width: 10rem;
+  height: 3rem;
+  border-radius: 1.5rem;
+  background: #8cd1e6;
+}
+
+.footer-content-button-text {
+  font-size: .875rem;
+  color: #fff;
+  padding-left: .625rem;
+}
+
+.cards-images {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 48px;
+  padding: 0 14px;
+  background: transparent;
+}
+
+.cards-images-item {
+  display: block;
+}
+.cards-images-container {
+  display: inline-block;
+  max-width: 390px;
+  background: #fff;
+  padding: 6px;
+  border-radius: 20px;
+  font-size: 0;
+}
+.cards-images-container:not(:first-child) {
+  margin-top: 10px;
+}
+
+ /* header */
+ .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 15px;
+  background: #fff;
+}
+.header-content {
+  margin-left: .625rem;
+}
+.header-content-title {
+  font-weight: bold;
+  font-size: .75rem;
+  color: #222;
+  line-height: 1.2;
+  margin: 0;
+  padding-bottom: 6px;
+}
+.header-content-desc {
+  font-size: 12px;
+  color: #999;
+  margin: 0;
+  transform-origin: left center;
+  transform: scale(0.83);
+}
+.header-button {
+  height: 2rem;
+  font-size: 0.875rem;
+}
+  </style>
 </head>
 
 <body>
-  <div id="root">
-    <div class="App cards">
+  <div class="App">
+    <div class="cards">
       <header class="header">
         <div class="d-flex-start" onclick="handleClick()">
           <img src='./img/logo.png' width="32px" height="32px" alt="headPortrait1" />
@@ -30,161 +219,20 @@
 
       <div class="cards-images">
         <div class="cards-images-container">
-          <div class="cards-images-item-wrapper">
-          <div class="cards-images-item-two">
-              <div class="cards-one-content">
-                <div class="cards-one-header">
-                  <img src="./img/cards/logo.png" width="25px" height="25px" />
-                  <h2 class="cards-one-title">Pet Number Card</h2>
-                </div>
-                <h2 class="d-flex-center cards-one-title">-Aqua-</h2>
-
-                <div class="card-one-middle">
-                  <div class="card-QRcode"><img src="./img/cards/QRcode.png" width="100%" /></div>
-                  <img src="./img/cards/profile.png" height="100%" />
-
-                  <div class="card-ID">
-                    <img src="./img/cards/IDcode.png" width="100%" />
-                    <div class="card-ID-desc">
-                      <span class="card-ID-text">鼻紋認証特許</span>
-                      <span class="card-ID-text">第6795243号</span>
-                    </div>
-                  </div>
-
-                  <div class="card-one-number">
-                    <span class="card-one-number-text">000</span>
-                    <span class="card-one-number-text">176</span>
-                    <span class="card-one-number-text">824</span>
-                    <span class="card-one-number-text">562</span>
-                  </div>
-                </div>
-                <div class="card-one-footer">
-                  <div>
-                    <span class="card-one-footer-text">VALID FROM</span>
-                    <span class="card-one-footer-time">02/09/22</span>
-                  </div>
-                  <div class="card-item-name">ジロー 中田</div>
-                </div>
-              </div>
-
+          <img class="cards-images-item" src="./img/cards/card-one.png" width="100%" />
+          <span></span>
         </div>
-        </div>
-        </div>
-
-
         <div class="cards-images-container">
-          <div class="cards-images-item-wrapper">
-            <div class="cards-images-item-two">
-                <div class="cards-two-content">
-
-                  <div class="cards-two-header">
-                    <div class="cards-two-header-left">
-                      <span class="cards-two-name">ジロー 中田</span>
-                      {# <img src="./img/cards/man.png" width="15px" height="20px" alt="man" /> #}
-                      <img src="./img/cards/women.png" width="15px" height="20px" alt="man" />
-                    </div>
-                    <span class="cards-two-header-right">2018年1月24日（水瓶座）</span>
-                  </div>
-                  <table class="cards-table">
-                    <thead>
-                      <tr>
-                        <th colspan="3">
-                          <div>
-                            <span class="td-btn">种类</span>
-                            <span>犬・トイプードル</span>
-                          </div>
-                        </th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr class="tr-3">
-                        <td class="td-3">
-                          <div class="d-flex-start">
-                            <span>毛色</span>
-                            <span class="td-span-right">白</span>
-                          </div
-                        </td>
-                        <td class="td-3">
-                          <div class="d-flex-start">
-                            <span>体重</span>
-                            <span class="td-span-right">5kg</span>
-                          </div
-                        </td>
-                        <td class="td-3">
-                          <div class="d-flex-between">
-                            <span>疫苗接种</span>
-                            <span>否</span>
-                          </div
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          <div class="d-flex-start">
-                            <span>瞳色</span>
-                            <span class="td-span-right">青・琥珀</span>
-                          </div
-                        </td>
-                        <td>
-                          <div class="d-flex-start">
-                            <span>体长</span>
-                            <span class="td-span-right">30cm</span>
-                          </div
-                        </td>
-                        <td>
-                          <div class="d-flex-between">
-                            <span>绝育手术</span>
-                            <span>未</span>
-                          </div
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-
-                  <table class="cards-table">
-                    <tbody>
-                      <tr>
-                        <td class="td-2">
-                          <div class="d-flex-between">
-                            <span>家长</span>
-                            <span>田中まさよし</span>
-                          </div
-                        </td>
-                        <td class="td-2">
-                          <div class="d-flex-between">
-                            <span>NGA_ID</span>
-                            <span>1234567</span>
-                          </div
-                        </td>
-                      </tr>
-                    </tbody>
-
-                    <tfoot>
-                      <tr>
-                        <th colspan="2">备注信息</th>
-                      </tr>
-                    </tfoot>
-
-                  </table>
-
-                  <div class="cards-two-footer">
-                    <h2 class="cards-two-footer-title">宠物卡说明</h2>
-                    <p class="card-two-footer-desc">此卡将由卡正面展示的宠物使用，包含关联店铺服务、EC会员服务、保险认证、 宠物追寻等服务。</p>
-                  </div>
-                </div>
-            </div>
-          </div>
+          <img class="cards-images-item" src="./img/cards/card-two.png" width="100%" />
         </div>
-        
       </div>
 
       <footer class="footer d-flex-center">
-          <button class="button footer-content-button" onClick="handleClick()">
+        <button class="button footer-content-button" onClick="handleClick()">
           <img src="./img/logo.png" width="32px" height="32px" alt="button icon" />
           <span class="footer-content-button-text" >App内打开</span>
-          </button>
-        </div>
+        </button>
       </footer>
-
     </div>
   </div>
   <script>
