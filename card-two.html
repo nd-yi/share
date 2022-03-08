@@ -104,68 +104,139 @@ button {
   align-items: center;
 }
 
+@font-face {
+  font-family: Dosis;
+  src: url('./font/Dosis-Light.ttf');
+}
+
+@font-face {
+  font-family: GenJyuuGothic;
+  src: url('./font/GenJyuuGothic-P-Regular.ttf');
+}
+
+@font-face {
+  font-family: GenJyuuGothic-bold;
+  src: url('./font/GenJyuuGothic-P-Bold.ttf');
+}
+
+@font-face {
+  font-family: GenJyuuGothic-Light;
+  src: url('./font/GenJyuuGothic-P-Light.ttf');
+}
+
     /* first card style */
     .cards-images-item-wrapper {
   background: #8CD1E6;
-  border-radius: 20px;
-  padding: 2px 6px 8px 6px;
+  border-radius: 15px;
   max-width: 390px;
 }
 .cards-images-item-two {
-  background: url('./img/cards/border-one.png') no-repeat;
+  background: url('./img/cards/border3.png') no-repeat;
   background-size: 100% 100%;
+  font-family: Dosis, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 /* 第二个卡片内容宽度 */
 .cards-two-content {
   width: 86%;
-  height: 76%;
   display: flex;
   flex-direction: column;
   align-items:  center;
   margin: 0 auto;
-  padding: 16px 0;
+  padding-top: 16px;
+  padding-bottom: 4px;
 }
 .cards-table {
-  width: 100%;
+  width: 116%;
   border-collapse: collapse;
   background: #fff;
   border-radius: 2px;
+  transform-origin: center center;
+  font-size: 12px;
+  transform: scale(0.83);
+  font-family: GenJyuuGothic-Light;
+  border: 1px solid #828282;
+  border-radius: 4px;
+  border-collapse: collapse;
+  border-style:hidden;
+  box-shadow: 0 0 0 1px  #828282;
 }
-.cards-table,
+.cards-table:not(:first-child) {
+    margin: 0;
+  margin-top: -5px;
+}
 th,
 td {
   border: 1px solid #828282;
 }
-.table {
-  /* width: 100%; */
-  font-size: 12px;
-  transform: scale(0.83);
-  /* table-layout: fixed; */
-}
 th,
 td {
-  /* width: 140%; */
-  height: 22px;
+  height: 27px;
   font-weight: 400;
   white-space: nowrap;
   vertical-align: middle;
   color: #828282;
-  font-size: 12px;
-  transform-origin: left center;
-  transform: scale(0.83);
+
   padding-left: 18px;
   text-align: left;
 }
+.font-dosis {
+  font-family: Dosis;
+}
 
-.td-3 {
-  width: 33.3%;
+.grid-2 {
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }
-.td-2 {
-  width: 50%;
+.grid-2-item-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform-origin: center center;
+  font-size: 12px;
+  transform: scale(0.83);
+  font-family: GenJyuuGothic-Light;
 }
+.table-btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background: #828282;
+  color: #fff;
+  border-radius: 4px;
+  padding: 2px 4px;
+}
+.table-btn-text {
+  margin-right: 4px;
+}
+
 .td-span-right {
   margin-left: 20px;
+}
+.td-2-span-right {
+  margin-left: 30px;
+}
+.td-3 {
+  width: 33.3%;
+  padding-right: 10px;
+}
+.td-2 {
+   width: 50%;
+  padding-right: 10px;
+}
+.td-3-right {
+  padding: 0 10px 0 4px;
+}
+.circle-text {
+  display: inline-flex;
+  padding: 2px;
+  border-radius: 50%;
+  border: 0.5px solid #707070;
 }
 
 .td-algin-left {
@@ -174,29 +245,33 @@ td {
   align-content: flex-start;
 }
 
-table:not(:first-child) {
-  margin-top: 5px;
-}
-
 .cards-two-header {
-  width: 76%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  width: 90%;
   font-size: 10px;
+  padding: 3px 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-content: flex-start;
+  align-items: center;
 }
 .cards-two-header-left {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
 }
 .cards-two-header-right {
   font-weight: 400;
   font-size: 12px;
-  text-align: left;
+  text-align: right;
   color: #828282;
-  transform: scale(0.83);
   white-space: nowrap;
+  transform-origin: center center;
+  font-size: 12px;
+  transform: scale(0.83);
+  font-family: GenJyuuGothic-Light;
+}
+.cards-two-header-right-text {
+  margin-right: 6px;
 }
 .cards-two-name {
   font-weight: bold;
@@ -205,11 +280,12 @@ table:not(:first-child) {
   color: #f8f8f8;
   white-space: nowrap;
   margin-right: 2px;
+  font-family: GenJyuuGothic-bold;
 }
 
 .cards-two-footer {
   width: 100%;
-  margin: 8px 0 -16px 0;
+  margin: 4px 0 0 0;
   padding-top: 6px;
   border-top: 2px solid #61A9C2;
   color: #43778a;
@@ -219,34 +295,37 @@ table:not(:first-child) {
   font-weight: bold;
   font-size: 12px;
   transform: scale(0.83);
+  font-family: GenJyuuGothic-bold;
 }
 .card-two-footer-desc {
   width: 140%;
   font-weight: 400;
-  font-size: 6px;
+  font-size: 12px;
   text-align: left;
-  padding-left: 20px;
   letter-spacing: 0.01em;
-  line-height: 1.2;
+  line-height: 1;
+  padding: 6px 20px;
   transform-origin: left top;
   transform: scale(0.67);
+  font-family: GenJyuuGothic-Light;
 }
 
 @media(max-width: 359px) {
-  .cards-two-content {
-    width: 90%;
+  .cards-table {
+    width: 124%;
   }
   th,
   td {
     padding-left: 6px;
-    height: 18px;
+    height: 24px;
+  }
+  .td-2,
+  .td-3 {
+    padding-right: 6px;
   }
 
   .td-span-right {
     margin-left: 16px;
-  }
-  .cards-two-header {
-    margin-left: -20px;
   }
 
   .card-two-footer-desc {
@@ -256,15 +335,37 @@ table:not(:first-child) {
 }
 
 @media (min-width: 360px) and (max-width: 375px) {
+  .cards-table {
+    width: 120%;
+  }
   th,
   td {
-    padding-left: 10px;
-    height: 18px;
+    padding-left: 16px;
+    height: 27px;
   }
-  .cards-two-header {
-    margin-left: -20px;
+  .td-2,
+  .td-3 {
+    padding-right: 16px;
+  }
+  .card-two-footer-desc {
+    width: 136%;
   }
 
+}
+
+@media (min-width: 376px) and (max-width: 420px) {
+  .cards-table {
+    width: 123%;
+  }
+  th,
+  td {
+    padding-left: 18px;
+    height: 28px;
+  }
+  .td-2,
+  .td-3 {
+    padding-right: 18px;
+  }
   .card-two-footer-desc {
     width: 136%;
   }
@@ -287,13 +388,23 @@ table:not(:first-child) {
               <span class="cards-two-name">ジロー 中田</span>
               <img src="./img/cards/man.png" width="15px" height="20px" alt="man" />
             </div>
+            <div class="cards-two-header-right"><span class="cards-two-header-right-text">2018年1月24日</span>（水瓶座）</div>
           </div>
           <table class="cards-table">
             <!-- colspan="2" -->
             <thead>
               <tr>
-                <th class="td-2">種類： 犬・トイプードル</th>
-                <th colspan="2"><span class="cards-two-header-right">2018年1月24日（水瓶座）</span></th>
+                <th colspan="3">
+                  <div class="grid-2">
+                    <div class="d-flex-start">
+                      <div class="table-btn">
+                        <span class="table-btn-text"> 種類</span>
+                        <img src="./img/cards/kind-footprint.png" width="10px" height="10px" alt="footprint" />
+                      </div>
+                      <span class="td-span-right">犬・トイプードル</span>
+                    </div>
+                  </div>
+                </th>
               </tr>
             </thead>
             <tbody>
@@ -307,30 +418,30 @@ table:not(:first-child) {
                 <td class="td-3">
                   <div class="d-flex-start">
                     <span>体重</span>
-                    <span class="td-span-right">5kg</span>
+                    <span class="td-span-right font-dosis">5kg</span>
                   </div
                 </td>
-                <td class="td-3">
+                <td class="td-3 td-3-right">
                   <div class="d-flex-between">
                     <span>ワクチン接種</span>
-                    <span>否</span>
+                    <span class="circle-text">済</span>
                   </div
                 </td>
               </tr>
               <tr>
-                <td>
+                <td class="td-3">
                   <div class="d-flex-start">
                     <span>瞳色</span>
                     <span class="td-span-right">青・琥珀</span>
                   </div
                 </td>
-                <td>
+                <td class="td-3">
                   <div class="d-flex-start">
                     <span>体长</span>
-                    <span class="td-span-right">30cm</span>
+                    <span class="td-span-right font-dosis">30cm</span>
                   </div
                 </td>
-                <td>
+                <td class="td-3 td-3-right">
                   <div class="d-flex-between">
                     <span>不妊去勢手術</span>
                     <span>未</span>
@@ -344,15 +455,15 @@ table:not(:first-child) {
             <tbody>
               <tr>
                 <td class="td-2">
-                  <div class="d-flex-between">
-                    <span>家长</span>
-                    <span>田中まさよし</span>
+                  <div class="d-flex-start">
+                    <span>世帯主</span>
+                    <span class="td-2-span-right">田中まさよし</span>
                   </div
                 </td>
                 <td class="td-2">
-                  <div class="d-flex-between">
+                  <div class="d-flex-start">
                     <span>NGA_ID</span>
-                    <span>1234567</span>
+                    <span class="font-dosis td-2-span-right">1234567</span>
                   </div
                 </td>
               </tr>
@@ -360,7 +471,7 @@ table:not(:first-child) {
 
             <tfoot>
               <tr>
-                <th colspan="2">备注信息</th>
+                <th colspan="2">備考</th>
               </tr>
             </tfoot>
 
@@ -368,7 +479,7 @@ table:not(:first-child) {
 
           <div class="cards-two-footer">
             <h2 class="cards-two-footer-title">カード説明</h2>
-            <p class="card-two-footer-desc">本カードはペットナンバーの唯一標識になります。</p>
+            <p class="card-two-footer-desc">本カードは表面に記載されたペット様が店舗サービス、EC会員サービス、保険認証、迷子対策などの会員サービスを利用される際に使われるものです。</p>
           </div>
         </div>
     </div>

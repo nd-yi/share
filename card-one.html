@@ -104,25 +104,48 @@ button {
   align-items: center;
 }
 
+@font-face {
+  font-family: Dosis;
+  src: url('./font/Dosis-Light.ttf');
+}
+
+@font-face {
+  font-family: GenJyuuGothic;
+  src: url('./font/GenJyuuGothic-P-Regular.ttf');
+}
+
+@font-face {
+  font-family: GenJyuuGothic-bold;
+  src: url('./font/GenJyuuGothic-P-Bold.ttf');
+}
+
+@font-face {
+  font-family: GenJyuuGothic-Light;
+  src: url('./font/GenJyuuGothic-P-Light.ttf');
+}
+
+
     /* first card style */
     .cards-images-item-wrapper {
   background: #8CD1E6;
-  border-radius: 20px;
-  padding: 2px 6px 8px 6px;
+  border-radius: 15px;
   max-width: 390px;
 }
 .cards-images-item-two {
-  background: url('./img/cards/border-one.png') no-repeat;
+  background: url('./img/cards/border3.png') no-repeat;
   background-size: 100% 100%;
+  font-family: GenJyuuGothic, Dosis, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 /* 第一个卡片内容宽度 */
 .cards-one-content {
   width: 76%;
-  height: 76%;
   margin: 0 auto;
-  padding: 16px 0 8px 0;
-  /* border: 1px solid red; */
+  padding: 16px 0 16px 0;
 }
 
 .cards-one-header {
@@ -138,6 +161,7 @@ button {
   text-align: left;
   color: #828282;
   margin-left: 8px;
+  font-family: GenJyuuGothic-bold;
 }
 
 
@@ -162,19 +186,19 @@ button {
   margin-top: 20px;
 }
 .card-one-image {
-  /* height: 96px; */
   border-radius: 50% / 50% ;
   border: 1px solid #aaa;
+  box-sizing: content-box;
 }
 .card-one-image-wrapper {
-  height: 100%;
   display: inline-block;
   padding: 1px;
-  background: #fff;
+  background: #8CD1E6;
   border: 2px solid #999;
   overflow: hidden;
   border-radius: 50% / 50% ;
-
+  margin: 0;
+  font-size: 0;
 }
 .card-ID {
   position: relative;
@@ -196,12 +220,13 @@ button {
 }
 .card-one-number {
   position: absolute;
-  bottom: -10px;
+  bottom: -20px;
   left: 50%;
   transform: translateX(-50%);
   font-size: 0;
   white-space: nowrap;
   text-align: center;
+  font-family: Dosis;
 }
 .card-one-number span:not(:first-child) {
   margin-left: 4px;
@@ -211,13 +236,14 @@ button {
   letter-spacing: 0.06em;
   font-weight: 400;
   color: #f8f8f8;
+  font-family: Dosis;
 }
 
 .card-one-footer {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   align-items: center;
-  padding-top: 6px;
+  padding-top: 16px;
 }
 .card-one-footer-text {
   display: inline-block;
@@ -229,6 +255,7 @@ button {
   letter-spacing: 0.05em;
   transform-origin: left bottom;
   transform: scale(0.833);
+  font-family: Dosis;
 }
 .card-one-footer-time {
   display: inline-block;
@@ -239,10 +266,10 @@ button {
   letter-spacing: 0.05em;
   transform-origin: left center;
   transform: scale(0.833);
-
+  font-family: Dosis;
 }
 .card-item-name {
-  font-family: "Gen Jyuu Gothic Bold";
+  font-family: "GenJyuuGothic-bold";
   font-weight: bold;
   font-size: 18px;
   text-align: left;
@@ -297,12 +324,12 @@ button {
           </div>
           <!-- <img class="card-one-image" src="./img/cards/profile.png" height="100%" /> -->
           <div class="card-one-image-wrapper">
-            <img class="card-one-image" src="https://tva1.sinaimg.cn/large/008i3skNgy1gqs8veg8q6j304c04m744.jpg" height="96px" />
+            <img class="card-one-image" src="https://cdn-pet-dev.nga-x.com/users/4/pets/9e5158e5c22a6e08c8485d991481ee0c.jpg" width="87px" height="100px" />
           </div>
           
 
           <div class="card-ID">
-            <img src="./img/cards/IDcode.png" width="100%" />
+            <img src="./img/cards/IDcode3.png" width="44px" hieght="38" />
             <div class="card-ID-desc">
               <span class="card-ID-text">鼻紋認証特許</span>
               <span class="card-ID-text">第6795243号</span>
