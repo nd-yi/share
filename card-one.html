@@ -176,11 +176,21 @@ button {
   /* border: 1px solid blue; */
   margin-top: 8px;
 }
+.qrcode-container {
+  position: relative;
+  width: 40px;
+  height: 40px;
+}
 .qrcode-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
   background: #fff;
-  padding: 6px;
-  border-radius: 10px;
+  padding: 60px;
+  border-radius: 60px;
   margin-top: 20px;
+   transform-origin: left top;
+  transform: scale(0.12);
 }
 .card-QRcode{
   margin-top: 20px;
@@ -318,8 +328,10 @@ button {
 
         <div class="card-one-middle">
           <!-- <div class="card-QRcode"><img src="./img/cards/QRcode.png" width="100%" /></div> -->
-          <div class="qrcode-wrapper">
-            <div id="qrcode"></div>
+          <div class="qrcode-container">
+            <div class="qrcode-wrapper">
+              <div id="qrcode"></div>
+            </div>
           </div>
           <!-- <img class="card-one-image" src="./img/cards/profile.png" height="100%" /> -->
           <div class="card-one-image-wrapper">
@@ -365,11 +377,12 @@ button {
   <script>
     var qrcode = new QRCode("qrcode", {
       text: "http://www.runoob.com",
-      width: 40,
-      height: 40,
+      width: 400,
+      height: 400,
       colorDark : "#2a83a7",
       colorLight : "#ffffff",
-      // correctLevel : QRCode.CorrectLevel.H
+      useSVG: true,
+      correctLevel : QRCode.CorrectLevel.H
     });
   </script>
 </body>
