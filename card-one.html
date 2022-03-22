@@ -186,11 +186,12 @@ button {
   top: 0;
   left: 0;
   background: #fff;
-  padding: 60px;
-  border-radius: 60px;
+  padding: 30px;
+  border-radius: 30px;
   margin-top: 20px;
-   transform-origin: left top;
-  transform: scale(0.12);
+  margin-left: -10px;
+  transform-origin: left top;
+  transform: scale(0.16);
 }
 .card-QRcode{
   margin-top: 20px;
@@ -377,8 +378,8 @@ button {
   <script>
     var qrcode = new QRCode("qrcode", {
       text: "http://www.runoob.com",
-      width: 400,
-      height: 400,
+      width: 200,
+      height: 200,
       colorDark : "#2a83a7",
       colorLight : "#ffffff",
       useSVG: true,
